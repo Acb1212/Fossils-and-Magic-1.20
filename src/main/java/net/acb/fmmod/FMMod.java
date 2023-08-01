@@ -1,6 +1,9 @@
 package net.acb.fmmod;
 
 import com.mojang.logging.LogUtils;
+import net.acb.fmmod.blocks.ModBlocks;
+import net.acb.fmmod.client.ModCreativeTab;
+import net.acb.fmmod.items.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -24,6 +27,10 @@ public class FMMod
     public FMMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeTab.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

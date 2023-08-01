@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "fmmod:block/tar_block"
+    }
+  }
+}

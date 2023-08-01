@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "fmmod:dna_debug"
+  }
+}

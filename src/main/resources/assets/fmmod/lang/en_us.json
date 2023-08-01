@@ -1,0 +1,10 @@
+{
+  "item.fmmod.dna_debug": "DNA",
+  "item.fmmod.amber_fossil": "Amber",
+  "item.fmmod.tar_bucket": "Bucket of Tar",
+
+  "block.fmmod.amber_block": "Block of Amber",
+  "block.fmmod.amber_ore": "Amber Ore",
+
+  "creativetab.fossils_tab": "Fossils"
+}
