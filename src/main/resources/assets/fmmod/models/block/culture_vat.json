@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fmmod:block/workstations/dna_cultivator_bot_ph",
+    "side": "fmmod:block/workstations/dna_cultivator_side_ph"
+  }
+}

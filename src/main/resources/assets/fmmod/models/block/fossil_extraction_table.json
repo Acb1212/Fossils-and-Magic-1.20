@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "fmmod:block/workstations/fossil_extraction_table_bottom",
+    "east": "fmmod:block/workstations/fossil_extraction_table_side",
+    "north": "fmmod:block/workstations/fossil_extraction_table_side",
+    "particle": "fmmod:block/workstations/fossil_extraction_table_side",
+    "south": "fmmod:block/workstations/fossil_extraction_table_side",
+    "up": "fmmod:block/workstations/fossil_extraction_table_top",
+    "west": "fmmod:block/workstations/fossil_extraction_table_side"
+  }
+}

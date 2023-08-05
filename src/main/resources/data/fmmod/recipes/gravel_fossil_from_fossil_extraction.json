@@ -1,0 +1,11 @@
+{
+  "type":"fmmod:fossil_extraction",
+  "ingredients": [
+    {
+      "item": "fmmod:raw_gravel_fossil"
+    }
+  ],
+  "output": {
+    "item": "fmmod:gravel_fossil"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type":"fmmod:dna_extraction",
+  "ingredients": [
+    {
+      "item": "fmmod:amber_fossil"
+    }
+  ],
+  "output": {
+    "item": "fmmod:dna_debug"
+  }
+}

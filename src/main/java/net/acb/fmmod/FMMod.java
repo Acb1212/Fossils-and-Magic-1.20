@@ -2,8 +2,14 @@ package net.acb.fmmod;
 
 import com.mojang.logging.LogUtils;
 import net.acb.fmmod.blocks.ModBlocks;
+import net.acb.fmmod.blocks.entity.ModBlockEntities;
 import net.acb.fmmod.client.ModCreativeTab;
 import net.acb.fmmod.items.ModItems;
+import net.acb.fmmod.recipe.ModRecipes;
+import net.acb.fmmod.screen.DNAExtractionTableScreen;
+import net.acb.fmmod.screen.FossilExtractionTableScreen;
+import net.acb.fmmod.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -31,6 +37,11 @@ public class FMMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeTab.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -60,6 +71,10 @@ public class FMMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            event.enqueueWork(() -> {
+                MenuScreens.register(ModMenuTypes.FOSSIL_EXTRACTION_MENU.get(), FossilExtractionTableScreen::new);
+                MenuScreens.register(ModMenuTypes.DNA_EXTRACTION_MENU.get(), DNAExtractionTableScreen::new);
+            });
 
          }
     }

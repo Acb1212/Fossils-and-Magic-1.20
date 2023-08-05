@@ -2,9 +2,13 @@
   "item.fmmod.dna_debug": "DNA",
   "item.fmmod.amber_fossil": "Amber",
   "item.fmmod.tar_bucket": "Bucket of Tar",
+  "item.fmmod.raw_gravel_fossil": "Raw Gravel Fossil",
+  "item.fmmod.gravel_fossil": "Gravel Fossil",
 
   "block.fmmod.amber_block": "Block of Amber",
   "block.fmmod.amber_ore": "Amber Ore",
+  "block.fmmod.culture_vat": "Culture Vat",
+  "block.fmmod.fossil_extraction_table": "Fossil Extraction Table",
 
   "creativetab.fossils_tab": "Fossils"
 }

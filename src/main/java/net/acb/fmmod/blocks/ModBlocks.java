@@ -3,6 +3,8 @@ package net.acb.fmmod.blocks;
 
 
 import net.acb.fmmod.FMMod;
+import net.acb.fmmod.blocks.advancedBlocks.DNAExtractionTable;
+import net.acb.fmmod.blocks.advancedBlocks.FossilExtractionTable;
 import net.acb.fmmod.blocks.advancedBlocks.SinkingBlock;
 import net.acb.fmmod.items.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -25,6 +27,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> AMBER_ORE = registerBlock("amber_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
     public static final RegistryObject<Block> TAR_BLOCK = registerSimpleBlock("tar_block", () -> new SinkingBlock(BlockBehaviour.Properties.copy(Blocks.MUD).destroyTime(-1)));
+    public static final RegistryObject<Block> CULTURE_VAT = registerBlock("culture_vat", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)));
+    public static final RegistryObject<Block> FOSSIL_EXTRACTION_TABLE = registerBlock("fossil_extraction_table", () -> new FossilExtractionTable(BlockBehaviour.Properties.copy(Blocks.SMITHING_TABLE)));
+    public static final RegistryObject<Block> DNA_EXTRACTION_TABLE = registerBlock("dna_extraction_table", () -> new DNAExtractionTable(BlockBehaviour.Properties.copy(Blocks.ENCHANTING_TABLE)));
 
     //Initialize Block Creation
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

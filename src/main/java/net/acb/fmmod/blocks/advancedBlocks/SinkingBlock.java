@@ -41,9 +41,6 @@ import java.util.Optional;
 
 public class SinkingBlock extends Block implements BucketPickup {
     private static final VoxelShape FALLING_COLLISION_SHAPE = Shapes.box(0.0D, 0.0D, 0.0D, 1.0D, (double)0.9F, 1.0D);
-    GuiGraphics gui;
-    private static final ResourceLocation TAR =
-            new ResourceLocation(FMMod.MODID, "textures/block/tar_block");
 
     public boolean skipRendering(BlockState pState, BlockState pAdjacentBlockState, Direction pDirection) {
         return pAdjacentBlockState.is(this) ? true : super.skipRendering(pState, pAdjacentBlockState, pDirection);
